@@ -1,0 +1,81 @@
+<table id="registerOrLogin">
+<tr>
+	
+	<td id="loginColumn" valign="top">
+		<div class="user-form">
+		
+	  	<h3><img src="/images/redsquare.png"/> &nbsp; Login</h3>
+	
+			<form id="login" action="/welcome/login" method="post">
+				<fieldset>
+				  <table>
+					<tr>
+					  <td>Username:</td>
+					  <td><input id="username" type="text" name="username" class="loginBox"/></td>
+					  <td><input name="authenticity_token" type="hidden" value=<%= form_authenticity_token %> /></td>
+					</tr><tr>
+					  <td>Password:</td>
+					  <td><input id="password" type="password" name="password" class="loginBox"/></td>
+					  <td></td>
+					</tr>
+				  </table>
+				<input id="login_btn" name="commit" type="submit" value="Login" class="submitButton"/>
+				</fieldset>		
+			</form>
+		</div>
+	</td>
+
+	<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+
+	<td id="registerColumn">
+	<div class="user-form" valign="top">
+	  
+	  <h3><img src="/images/redsquare.png"/> &nbsp; Register</h3>
+
+	  <% form_for :user do |form| -%>
+
+		<% field_set_tag 'Account information (required)' do -%>
+		<table class="formData">
+			<tr>
+				<td><label for="username">Username:</label></td>
+		  		<td><%= form.text_field :username, :size => 20%></td>
+			</tr>
+	    	<tr>
+		  		<td><label for="password">Password:</label></td>
+		  		<td><%= form.password_field :password, :size => 20%></td>
+			</tr>
+	    	<tr>
+		  		<td><label for="password">Confirm password:</label></td>
+		  		<td><%= form.password_field :password_confirmation, :size => 20%></td>
+			</tr>
+		</table>
+		<% end -%>
+	
+		<% field_set_tag 'Personal information (optional)' do -%>
+	    <table class="formData">
+			<tr>
+				<td><label for="first_name">Name:</label></td>
+			  	<td><%= form.text_field :name, :size => 30%></td>
+			</tr>
+			<tr>
+				<td><label for="username">Email:</label></td>
+		  		<td><%= form.text_field :email, :size => 30%></td>
+			</tr>
+			<tr>
+				<td><label for="school">School:</label></td>
+				<td><%= form.text_field :school, :size => 30%></td>
+			</tr>
+			<tr>
+				<td><label for="grad_year">Location:</label></td>
+				<td><%= form.text_field :location, :size => 30 %></td>
+			</tr>
+	    </table>
+		<% end -%>
+	
+		<%= submit_tag "Register", :class => 'submit' %>
+
+	  <% end %>
+	</div>
+	</td>
+</tr>
+</table>

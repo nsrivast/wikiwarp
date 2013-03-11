@@ -1,0 +1,30 @@
+<div class="user-form">
+  <h3>Add a game</h3>
+
+  <form action="/admin/add_game" method="post">
+	<input name="authenticity_token" type="hidden" value=<%= form_authenticity_token %> />
+
+	<table class="formData">
+		<tr>
+			<td><label for="username">Start page (in URL format):</label></td>
+	  		<td><%= text_field_tag :start, '', :size => 40%></td>
+		</tr>
+		<tr>
+			<td><label for="username">Target page (in URL format):</label></td>
+	  		<td><%= text_field_tag :target, '', :size => 40%></td>
+		</tr>
+    	<tr>
+	  		<td><label for="password">Estimated difficulty (1 = easiest, 5 = hardest):</label></td>
+			<td><%= select_tag 'estimated_difficulty', options_for_select([1,2,3,4,5],3) %></td>
+		</tr>
+    	<tr>
+	  		<td><label for="password">Your username (optional):</label></td>
+			<td><%= text_field_tag :author, '', :size => 40%></td>
+		</tr>
+	</table>
+	
+	<br /><br />
+	<%= submit_tag "Add game", :class => 'submit' %>
+
+  </form>
+</div>

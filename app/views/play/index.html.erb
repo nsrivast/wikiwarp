@@ -1,0 +1,46 @@
+<div id="warpContent" style="width: 600px;">
+
+	<p>
+		<img src="/images/redsquare.png"/> &nbsp; 
+		<%= link_to 'Play featured game', :action => 'featured' %>
+	</p><br />
+	
+	<p style="margin: -25px 0 0 25px; font-size: 13px;">
+		- hand-selected start and target pages to be challenging, entertaining, amusing<br />
+	<% if session[:user_id] %>
+		- your data will be saved under account: <b><%= session[:username] %></b>
+	<% else %>
+		- be sure to <%= link_to 'login/register', :controller => 'welcome', :action => 'register' %> 
+		to save your high scores and compete with other players
+	<% end%>
+	</p><br />
+
+	
+	<p>
+		<img src="/images/redsquare.png"/> &nbsp; 
+		<%= link_to 'Play random game', :action => 'random' %>
+	</p><br />
+	
+	<p style="margin: -25px 0 0 25px; font-size: 13px;">
+		- random start and target pages (may be more difficult, buggy)<br />
+		- you can click on the target page in this scenario to preview your goal
+	</p><br />
+
+	
+	<p>
+		<img src="/images/redsquare.png"/> &nbsp; Play custom game
+	</p>
+	
+	<form action="/play/custom">
+		<input name="authenticity_token" type="hidden" value=<%= form_authenticity_token %> />
+		<table style="margin-left: 18px; font:13px/20px verdana, arial, times, sans-serif">
+			<tr>
+				<td></td><td>start page:</td> <td><%= text_field_tag 'start_page' %></td><td></td>
+			</tr><tr>
+				<td></td><td>target page:</td><td><%= text_field_tag 'target_page' %></td>
+				<td><%= submit_tag "start game" %></td>
+			</tr>
+		<table>
+	</form>
+	
+</div>

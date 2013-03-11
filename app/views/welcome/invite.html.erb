@@ -1,0 +1,24 @@
+<div id="invite" style="width: 600px;">
+<h2><img src="/images/redsquare.png"/> &nbsp; Challenge your friends</h2>
+
+	<fieldset>
+	<% form_tag '/welcome/invite' do %>
+
+	  Enter email addresses - or import your contacts automatically:
+		<a href="#" onclick="showPlaxoABChooser('recipient_list', '/public/plaxo_cb.html'); return false">
+		  <img src="http://www.plaxo.com/images/abc/buttons/add_button.gif" alt="Add from my address book" />
+	    </a>
+	    <br />
+	  <%= text_area_tag :contact_emails, params[:contact_emails], :size => "200x3", :id => "recipient_list" %><br /><br />
+
+	  Message from you:<br />
+	  <%= text_area_tag :message, @default_message, :size => "200x3" %><br /><br />
+	
+	  Your name (or username):<br />
+	  <%= text_field_tag :author, @default_author %><br /><br />
+		
+	  <%= submit_tag 'Challenge these people', :class => 'submitButton' %>
+	<% end %>
+	</fieldset>
+	
+</div>

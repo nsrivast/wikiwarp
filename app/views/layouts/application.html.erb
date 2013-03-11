@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  	<head>	
+		<title>WikiWarp | The Wikipedia Game</title>
+		<meta name="description" content="The Wikipedia game" />
+		<meta name="keywords" content="wikipedia, game, semantic, map, web" />
+			<%= javascript_include_tag :application %>
+			<%= stylesheet_link_tag 'master', :media => "all" %>
+			<script type="text/javascript" src="http://www.plaxo.com/css/m/js/util.js"></script>
+			<script type="text/javascript" src="http://www.plaxo.com/css/m/js/basic.js"></script>
+			<script type="text/javascript" src="http://www.plaxo.com/css/m/js/abc_launcher.js"></script>	
+  	</head>
+	
+	<body>
+		<div id="warpHeader">
+			
+			<a href="../welcome/index" style="color:#aaa; font-size:20px; font-weight:900;">WikiWarp: The Wikipedia Game</a> &nbsp;  &nbsp; 
+			<img src="/images/redsquare.png"/> 
+
+			<%= link_to 'Play now!', :controller => 'play', :action => 'index' %>
+			
+			<% if session[:user_id] %>
+				<%= link_to 'Logout (user ' + session[:username] + ')', :controller => 'welcome', :action => 'logout' %>
+			<% else %>
+				<%= link_to 'Register/Login', :controller => 'welcome', :action => 'register' %>
+			<% end%>
+			
+			<%= link_to 'How to play', :controller => 'welcome', :action => 'how' %>
+			<%= link_to 'Learn more', :controller => 'welcome', :action => 'idea' %>
+		</div>
+		
+		<div id="warpContent">
+			<% if flash[:notice] -%>
+		    	<div id="warpNotice"><font color="yellow"><%= flash[:notice] %></font></div>
+		  	<% end -%>
+	
+			<div id="BodyContent">
+		  		<%= yield :layout %>
+			</div>
+		</div>
+		
+	</body>
+</html>

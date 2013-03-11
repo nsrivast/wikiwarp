@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  samplegame_id: 1
+  difficulty: 1
+  score: 1
+  links: 1
+  time: 1
+  start: MyString
+  target: MyString
+  path: MyString
+  created_at: 2013-03-09 22:09:59
+  updated_at: 2013-03-09 22:09:59
+
+two:
+  user_id: 1
+  samplegame_id: 1
+  difficulty: 1
+  score: 1
+  links: 1
+  time: 1
+  start: MyString
+  target: MyString
+  path: MyString
+  created_at: 2013-03-09 22:09:59
+  updated_at: 2013-03-09 22:09:59

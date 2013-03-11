@@ -1,0 +1,19 @@
+<div id="warpStatus">
+	Your current page: <b><%= @curr_page_readable %></b>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	Your target is:
+		<% if session[:gamertype] == 'random' %>
+			<b><a href="http://en.wikipedia.org/wiki/<%=session[:target_page]%>" target="_blank">
+				<%= session[:target_page].gsub('_',' ') %></a></b>
+		<% else %>
+			<b><%= session[:target_page].gsub('_',' ') %></b>
+		<% end %>
+	<br /><br />
+
+	You have spent <b><%= @elapsed_time %> seconds</b>, and made <b><%= pluralize(session[:num_links], "jump") %></b>.
+	Your current score is <b><%= @score %> points</b>.<br />
+</div>
+
+<div id="wikiPage" style="width:1000px">
+	<%= @clean_html %>
+</div>

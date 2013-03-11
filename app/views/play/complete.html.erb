@@ -1,0 +1,33 @@
+<h2>Your path</h2>
+<table>
+	<thead><tr><th># &nbsp;</th><th>Page &nbsp;</th><th>Time</th>
+	<tbody>	
+	<% @full_path.split(',,').each_with_index do |link, i| %>
+		<% page, time = link.split('((') %>
+		<tr>
+			<td><%= i.to_s %>.</td>
+			<td><%= page.gsub('_',' ') %></td>
+			<td><%= time[0..-3] %></td>
+		</tr>
+	<% end %>
+<table>
+
+<br /><br />
+
+<table>
+<tr>
+	<td valign="top">
+		<h2>Game performance</h2><br />
+		Your time: <b><%= @elapsed_time %> seconds</b><br />
+		Your score: <b><%= @score %> points</b><br /><br />
+	</td>
+</tr>
+</table>
+
+<br /><br />
+<ul>
+	<li>Think you can warp? <%= link_to 'Challenge a friend to beat your score', :controller => 'welcome', :action => 'invite', 
+		:start_page => session[:start_page], :target_page => session[:target_page], 
+		:time => @elapsed_time, :score => @score %></li>
+	<li><%= link_to 'Play another game', :action => 'index' %></li>
+</ul>

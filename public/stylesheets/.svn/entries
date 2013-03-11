@@ -1,0 +1,40 @@
+8
+
+dir
+190
+svn+project1ssh://209.20.69.213/home/nikhil/repository/project1/play/public/stylesheets
+svn+project1ssh://209.20.69.213/home/nikhil/repository/project1
+
+
+
+2008-12-17T10:57:00.012776Z
+162
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8a089807-a7f7-4224-a0bd-304427c23f49
+
+master.css
+file
+
+
+
+
+2009-01-22T21:33:53.000000Z
+f508eb155f07fb4bf3a5ef8ec51361db
+2008-12-17T10:57:00.012776Z
+162
+root
+

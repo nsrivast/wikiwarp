@@ -1,0 +1,18 @@
+<div id="invite" style="width: 600px;">
+	
+<h2><img src="/images/redsquare.png"/> &nbsp; Contact us</h2>
+
+	<fieldset>
+	<% form_tag '/welcome/contact' do %>
+
+	  Your message:<br />
+	  <%= text_area_tag :message, params[:message], :size => "200x3", :id => "recipient_list" %><br /><br />
+
+	  Your name or username (optional):<br />
+	  <%= text_field_tag :author, params[:author] %><br /><br />
+		
+	  <%= submit_tag 'Submit message', :class => 'submitButton' %>
+	<% end %>
+	</fieldset>
+	
+</div>
