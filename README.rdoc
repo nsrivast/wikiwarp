@@ -1,3 +1,8 @@
+== About
+
+Wikiwarp was created by [Nikhil Srivastava] (http://www.nikhilsrivastava.com) in 2009, 
+and was maintained in partial fulfillment of the requirements for [this course] (http://www.eecs.harvard.edu/cs286r/)
+
 == WikiWarp
 
 WikiWarp is intended to be a "game with a purpose", a game played by human participants 
@@ -10,42 +15,42 @@ and concepts, for example "prison" and "democracy". The accurate aggregation of 
 or even a small improvement on current methods of aggregation, has powerful applications including 
 search engine technology and advertising.
 
-Playing WikiWarp, you'll be placed on a *start page* on Wikipedia and instructed to navigate 
-through the links of the website to arrive at a specified *target page*. You'll be scored
-on the total time of your successful warp as well as the number of links you click along the way,
-and in the future you might even get to race against other players in real time.
-
 The paths constructed between disparate topics contain some information 
 about their semantic relatedness, and the goal of the game is to encourage high-volume 
 production of this user-generated information.
 
+Data gathered over the 2 weeks the application was online (over 800 games were played 
+by more than 400 users, generating 50+ hours of gameplay) was used to create the results
+and discussion in [wikiwarp_final_report] (https://github.com/nsrivast/wikiwarp/blob/master/wikiwarp_final_report.pdf).
+
 == How to Play
 
-The goal of WikiWarp is to navigate through the linked pages of Wikipedia to arrive at 
-a target page in the shortest amount of time and/or using the fewest number of links.
+Playing WikiWarp, you'll be placed on a start page on Wikipedia and instructed to navigate 
+through the links of the website to arrive at a specified target page. You'll be scored
+on the total time of your successful warp as well as the number of links you click along the way.
 
 There are a variety of game types, including:
 
-* *featured games* that use hand-selected start and target pages for exciting and informative warping
-* *random games* that use completely random start and target pages from Wikipedia
-* *custom games* in which the user can choose their own start and target pages
+* featured games that use hand-selected start and target pages for exciting and informative warping
+* random games that use completely random start and target pages from Wikipedia
+* custom games in which the user can choose their own start and target pages
 
-At every step of each of these games, the user is presented with a page that looks like 
-[this] (https://github.com/nsrivast/wikiwarp/blob/master/public/images/how_to_play_mod.png).
+At every step of each of these games, you are presented with a page that looks like [this]
+(https://github.com/nsrivast/wikiwarp/blob/master/public/images/how_to_play_mod.png).
 
-Game statistics are visible in the blue status bar, and below that is a reproduction of the
-Wikipedia page currently being viewed. Click on any of the links that will get you closer
-to the target.
+Game statistics are visible in the yellow status bar, and below that is a reproduction of the
+Wikipedia page you are currently viewing. Click on any of the links that you think will get you closer
+to your target.
 
-== About
-This application was created by <a href="http://www.nikhilsrivastava.com">Nikhil Srivastava</a> in 2009, 
-and was maintained in partial fulfillment of the requirements for [this course] (http://www.eecs.harvard.edu/cs286r/)
+== Notes
+
+This application was created in Rails 2 and refurbished in Rails 3. It runs properly but may have some
+deprecated file structures and formats.
 
 == References
 
-* [www.GWAP.com] (http://www.gwap.com/) - a collection of other games with a purpose</li>
+* [1] [Games with a Purpose - Louis von Ahn] (www.cs.cmu.edu/~biglou/ieee-gwap.pdf)
 
-* [Games with a Purpose - Louis von Ahn] (www.cs.cmu.edu/~biglou/ieee-gwap.pdf)
+* [2] [www.GWAP.com] (http://www.gwap.com/) - a collection of other games with a purpose
 
-* [Semantic relatedness] (http://en.wikipedia.org/wiki/Semantic_relatedness)
-	
+* [3] [Semantic relatedness] (http://en.wikipedia.org/wiki/Semantic_relatedness)
