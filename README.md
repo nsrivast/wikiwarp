@@ -1,7 +1,6 @@
 ## About ##
 
-Wikiwarp was created by [Nikhil Srivastava] (http://www.nikhilsrivastava.com) in 2009, 
-and was maintained in partial fulfillment of the requirements for [this course] 
+Wikiwarp was created in 2009, and was maintained in partial fulfillment of the requirements for [this course] 
 (http://www.eecs.harvard.edu/cs286r/).
 
 ## WikiWarp ##
@@ -42,11 +41,6 @@ At every step of each of these games, you are presented with a page that looks l
 Game statistics are visible in the yellow status bar, and below that is a reproduction of the
 Wikipedia page you are currently viewing. Click on any of the links that you think will get you closer
 to your target.
-
-## Notes ##
-
-This application was created in Rails 2 and refurbished in Rails 3. It runs properly but may have some
-deprecated file structures and formats.
 
 ## References ##
 
