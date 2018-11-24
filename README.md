@@ -1,6 +1,6 @@
 ## About ##
 
-Wikiwarp was created in 2009, and was maintained in partial fulfillment of the requirements for [this course] (http://www.eecs.harvard.edu/cs286r/).
+Wikiwarp was created in 2009, and was maintained in partial fulfillment of the requirements for [this course](http://www.eecs.harvard.edu/cs286r/).
 
 ## WikiWarp ##
 
@@ -20,7 +20,7 @@ production of this user-generated information.
 
 Data gathered over the 2 weeks the application was online (800+ games from 200+ users, 
 generating 50+ hours of gameplay) was used to create the results and discussion in 
-[wikiwarp_final_report] (https://github.com/nsrivast/wikiwarp/blob/master/wikiwarp_final_report.pdf).
+[wikiwarp_final_report](https://github.com/nsrivast/wikiwarp/blob/master/wikiwarp_final_report.pdf).
 
 ## How to Play ##
 
@@ -34,8 +34,7 @@ There are a variety of game types, including:
 * _random games_ that use completely random start and target pages from Wikipedia
 * _custom games_ in which the user can choose their own start and target pages
 
-At every step of each of these games, you are presented with a page that looks like [this]
-(https://github.com/nsrivast/wikiwarp/blob/master/public/images/how_to_play_mod.png).
+At every step of each of these games, you are presented with a page that looks like [this](https://github.com/nsrivast/wikiwarp/blob/master/public/images/how_to_play_mod.png).
 
 Game statistics are visible in the yellow status bar, and below that is a reproduction of the
 Wikipedia page you are currently viewing. Click on any of the links that you think will get you closer
@@ -43,8 +42,8 @@ to your target.
 
 ## References ##
 
-* [1] [Games with a Purpose - Louis von Ahn] (http://www.cs.cmu.edu/~biglou/ieee-gwap.pdf)
+* [1] [Games with a Purpose - Louis von Ahn](http://www.cs.cmu.edu/~biglou/ieee-gwap.pdf)
 
-* [2] [www.GWAP.com] (http://www.gwap.com/) - a collection of other games with a purpose
+* [2] [www.GWAP.com](http://www.gwap.com/) - a collection of other games with a purpose
 
-* [3] [Semantic relatedness] (http://en.wikipedia.org/wiki/Semantic_relatedness)
+* [3] [Semantic relatedness](http://en.wikipedia.org/wiki/Semantic_relatedness)
