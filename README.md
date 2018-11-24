@@ -1,7 +1,6 @@
 ## About ##
 
-Wikiwarp was created in 2009, and was maintained in partial fulfillment of the requirements for [this course] 
-(http://www.eecs.harvard.edu/cs286r/).
+Wikiwarp was created in 2009, and was maintained in partial fulfillment of the requirements for [this course] (http://www.eecs.harvard.edu/cs286r/).
 
 ## WikiWarp ##
 
